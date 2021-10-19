@@ -1,0 +1,93 @@
+@import 'base/base';
+@font-face {
+    font-family: 'Number';
+    src: url(./font/PressStart2P-Regular.ttf);
+}
+body {
+    background-color: rgb(10, 10, 54);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+}
+.box{
+    width: 99vw;
+    height: 30vh;
+    border: lightblue solid 1px;
+    font-family: 'number';
+    color: lightblue;
+    padding: 20px 0;
+    &__Date{
+        font-size: 30px;
+        text-align: center;
+    }
+    &__Time{
+        font-size: 60px;
+        text-align: center;
+        margin-top: 40px;
+    }
+    &Timer{
+        width: 33%;
+        height: 80%;
+        font-size: 60px;
+        text-align: center;
+        padding-top: 60px;
+        &Button{
+           width: 100%;
+           height: 100%;
+           display: flex;
+           justify-content: center;
+           margin-top: 15px;
+           margin-left: -6px;
+        }
+    }
+}
+.d--Flex{
+    display: flex;
+    justify-content: space-around
+}
+.stopwatch{
+    width: 40%;
+    height: 80%;
+    &__timer{
+        margin-top: 40px;
+        font-size: 60px;
+        text-align: center;
+    }
+    &__note{
+        width: 100%;
+        height: 100%;
+        background-color:rgb(10, 10, 54);
+        border: lightblue double 1px;
+        resize: none;
+        font-family: 'number';
+        color: lightblue;
+        font-size: 20px;
+    }
+}
+.boxButton{
+    width: 100%;
+    height: 25%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    width: 150px;
+    height: 50px;
+    border: lightblue solid 1px;
+    color: lightblue;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: rgb(10, 10, 54);
+    margin: 0 2px;
+    &:focus{
+        outline: lightcyan solid 2px;
+    }
+}
+.btn1{
+    @extend .btn;
+    width: 50px;
+}

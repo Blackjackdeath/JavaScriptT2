@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <div class="box">
+        <p class="box__Date"></p>
+        <p class="box__Time"></p>
+    </div>
+    <div class="box d--Flex">
+        <div class="stopwatch">
+            <p class="stopwatch__timer">00:00:00:000</p>
+            <div class="boxButton">
+                <button type="button" class="btn" onclick="startClick()">START</button>
+                <button type="button" class="btn" onclick="stopClick()">STOP</button>
+                <button type="button" class="btn" onclick="loopClick()">LOOP</button>
+                <button type="button" class="btn" onclick="resretClick()">RESET</button>
+            </div>
+        </div>
+        <div class="stopwatch">
+            <textarea name="timerNote" class="stopwatch__note"></textarea>
+        </div>
+    </div>
+    <div class="box d--Flex"">
+        <div class="boxTimer">
+            <p>25</p>
+            <div class="boxTimerButton">
+                <button type="button" class="btn1" onclick="addClick()">+</button>
+                <button type="button" class="btn1" onclick="subClick()">-</button>
+            </div>
+        </div>
+        <div class="boxTimer">
+            <p>00:00</p>
+            <div class="boxTimerButton ">
+                <button type="button" class="btn" onclick="startClickTimer()">START</button>
+                <button type="button" class="btn" onclick="stopClickTimer()">STOP</button>
+                <button type="button" class="btn" onclick="resretClickTimer()">RESET</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script/script.js"></script>
+</body>
+</html>

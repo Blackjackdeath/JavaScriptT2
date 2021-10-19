@@ -1,0 +1,182 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'Number';
+  src: url(./font/PressStart2P-Regular.ttf);
+}
+
+body {
+  background-color: #0a0a36;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box {
+  width: 99vw;
+  height: 30vh;
+  border: lightblue solid 1px;
+  font-family: 'number';
+  color: lightblue;
+  padding: 20px 0;
+}
+
+.box__Date {
+  font-size: 30px;
+  text-align: center;
+}
+
+.box__Time {
+  font-size: 60px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.boxTimer {
+  width: 33%;
+  height: 80%;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.boxTimerButton {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15px;
+  margin-left: -6px;
+}
+
+.d--Flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.stopwatch {
+  width: 40%;
+  height: 80%;
+}
+
+.stopwatch__timer {
+  margin-top: 40px;
+  font-size: 60px;
+  text-align: center;
+}
+
+.stopwatch__note {
+  width: 100%;
+  height: 100%;
+  background-color: #0a0a36;
+  border: lightblue double 1px;
+  resize: none;
+  font-family: 'number';
+  color: lightblue;
+  font-size: 20px;
+}
+
+.boxButton {
+  width: 100%;
+  height: 25%;
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn, .btn1 {
+  width: 150px;
+  height: 50px;
+  border: lightblue solid 1px;
+  color: lightblue;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: #0a0a36;
+  margin: 0 2px;
+}
+
+.btn:focus, .btn1:focus {
+  outline: lightcyan solid 2px;
+}
+
+.btn1 {
+  width: 50px;
+}
+/*# sourceMappingURL=main.css.map */
